@@ -1,0 +1,22 @@
+# Node 
+node_modules/ 
+*.log 
+# Next.js 
+.next/ 
+out/ 
+build/ 
+# Environment 
+.env 
+.env.local 
+.env.development 
+.env.production 
+.env.test 
+# OS 
+Thumbs.db 
+.DS_Store 
+# Vercel 
+.vercel 
+# Editors 
+.vscode/ 
+.idea/ 
+# TS output 
