@@ -9,7 +9,7 @@ export function Hero() {
       {/* Mobile Background Image - Upload your cropped mobile version to public/mobile-hero.jpg */}
       <div className="absolute inset-0 z-0 md:hidden">
         <img
-          src="/mobile-hero.jpg"
+          src="/gm.jpeg"
           alt="Background"
           className="h-full w-full object-cover"
         />
