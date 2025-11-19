@@ -4,11 +4,11 @@ export function Hero() {
   return (
     <section
       id="home"
-      className="relative flex min-h-[100dvh] items-center overflow-hidden"
+      className="relative flex min-h-[100dvh] items-center overflow-hidden bg-black"
     >
-      {/* Mobile Background Image */}
+      {/* Mobile Background Image - Fixed positioning prevents bounce scroll */}
       <div
-        className="absolute inset-0 z-0 md:hidden"
+        className="absolute inset-0 z-0 bg-fixed md:hidden md:bg-scroll"
         style={{
           backgroundImage: "url('/gm.jpeg')",
           backgroundSize: "cover",
@@ -38,9 +38,9 @@ export function Hero() {
       {/* Gradient overlay */}
       <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-transparent to-black/40 md:bg-gradient-to-r md:from-black/70 md:via-black/30 md:to-transparent" />
 
-      <div className="container relative z-10 mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="max-w-3xl py-20 sm:py-24 md:pt-0">
-          <h1 className="mb-4 text-balance text-3xl font-black uppercase leading-[1.1] tracking-tight text-white drop-shadow-2xl sm:mb-6 sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl">
+      <div className="container relative z-10 mx-auto flex min-h-[100dvh] flex-col justify-end px-4 pb-16 sm:px-6 md:justify-center md:pb-0 lg:px-8">
+        <div className="max-w-3xl">
+          <h1 className="mb-3 text-balance text-3xl font-black uppercase leading-[1.1] tracking-tight text-white drop-shadow-2xl sm:mb-4 sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl">
             Your Comprehensive Partner
             <br />
             <span className="text-accent">
@@ -48,7 +48,7 @@ export function Hero() {
             </span>
           </h1>
 
-          <p className="mb-8 max-w-2xl text-base leading-relaxed text-white drop-shadow-lg sm:mb-10 sm:text-lg md:text-xl">
+          <p className="mb-6 max-w-2xl text-sm leading-relaxed text-white drop-shadow-lg sm:mb-8 sm:text-base md:text-lg lg:text-xl">
             Professional CCTV installation, electric fencing, alarm systems,
             intercom solutions, and custom aluminum fabrication across South
             Africa.
