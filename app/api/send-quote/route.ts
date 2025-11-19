@@ -1,15 +1,14 @@
 import { NextResponse } from "next/server";
 import { Resend } from "resend";
 
-// Initialize Resend client using your API key from .env.local
-const resend = new Resend(process.env.RESEND_API_KEY);
-
-// Replace these with your actual emails
-const SENDER_EMAIL = "onboarding@resend.dev"; // Must be verified in Resend
+const SENDER_EMAIL = "onboarding@resend.dev";
 const RECIPIENT_EMAIL = "lm.studios.web@gmail.com";
 
 export async function POST(req: Request) {
   try {
+    // FIX: Do NOT initialize Resend at the top level
+    const resend = new Resend(process.env.RESEND_API_KEY);
+
     const { name, email, phone, service, message } = await req.json();
 
     const { error } = await resend.emails.send({
@@ -23,7 +22,7 @@ export async function POST(req: Request) {
         <p><strong>Email:</strong> ${email}</p>
         <p><strong>Phone:</strong> ${phone}</p>
         <p><strong>Service:</strong> ${service}</p>
-        <hr>
+        <hr />
         <h3>Message:</h3>
         <p>${message}</p>
       `,
@@ -37,7 +36,7 @@ export async function POST(req: Request) {
       );
     }
 
-    return NextResponse.json({ success: true }, { status: 200 });
+    return NextResponse.json({ success: true });
   } catch (err: any) {
     console.error("Server Error:", err);
     return NextResponse.json(

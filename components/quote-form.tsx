@@ -85,9 +85,7 @@ export function QuoteForm() {
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid gap-6 sm:grid-cols-2">
                   <div className="space-y-2">
-                    <Label htmlFor="name" className="text-card-foreground">
-                      Full Name
-                    </Label>
+                    <Label htmlFor="name">Full Name</Label>
                     <Input
                       id="name"
                       name="name"
@@ -96,9 +94,7 @@ export function QuoteForm() {
                     />
                   </div>
                   <div className="space-y-2">
-                    <Label htmlFor="email" className="text-card-foreground">
-                      Email
-                    </Label>
+                    <Label htmlFor="email">Email</Label>
                     <Input
                       id="email"
                       name="email"
@@ -111,9 +107,7 @@ export function QuoteForm() {
 
                 <div className="grid gap-6 sm:grid-cols-2">
                   <div className="space-y-2">
-                    <Label htmlFor="phone" className="text-card-foreground">
-                      Phone Number
-                    </Label>
+                    <Label htmlFor="phone">Phone Number</Label>
                     <Input
                       id="phone"
                       name="phone"
@@ -123,14 +117,12 @@ export function QuoteForm() {
                     />
                   </div>
                   <div className="space-y-2">
-                    <Label htmlFor="service" className="text-card-foreground">
-                      Service Needed
-                    </Label>
+                    <Label htmlFor="service">Service Needed</Label>
                     <select
                       id="service"
                       name="service"
                       required
-                      className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+                      className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm"
                     >
                       <option value="">Select a service</option>
                       <option value="aluminium">Aluminium Fabrication</option>
@@ -146,9 +138,7 @@ export function QuoteForm() {
                 </div>
 
                 <div className="space-y-2">
-                  <Label htmlFor="message" className="text-card-foreground">
-                    Project Details
-                  </Label>
+                  <Label htmlFor="message">Project Details</Label>
                   <Textarea
                     id="message"
                     name="message"
