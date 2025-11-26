@@ -39,8 +39,7 @@ export function Hero() {
           </h1>
 
           <p className="mb-6 max-w-xl text-sm leading-relaxed text-white/95 drop-shadow-lg sm:mb-10 sm:text-xl">
-            Professional CCTV installation, electric fencing, alarm systems,
-            intercom solutions, and custom aluminum fabrication across South
+            Professional CCTV installation, electric fencing, alarm systems, and custom aluminum fabrication across South
             Africa.
           </p>
 

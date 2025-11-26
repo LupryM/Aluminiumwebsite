@@ -100,7 +100,6 @@ export function Footer() {
               <li className="text-white/80">Gate & Door Automation</li>
               <li className="text-white/80">CCTV Installations</li>
               <li className="text-white/80">Electric Fencing</li>
-              <li className="text-white/80">Alarm & Intercom Systems</li>
             </ul>
           </div>
 
