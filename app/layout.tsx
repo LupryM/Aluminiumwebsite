@@ -40,6 +40,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        {/* ⭐ Google Search Console Verification */}
+        <meta
+          name="google-site-verification"
+          content="qAHGRW-YzFnUy9Yrn8ak-qWXEh669pORBfpHQ6augBA"
+        />
+      </head>
+
       <body className={`${roboto.className} font-sans antialiased`}>
         {children}
         <WhatsAppChat />
